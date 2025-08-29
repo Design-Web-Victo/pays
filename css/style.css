@@ -1,0 +1,88 @@
+
+header {
+    background-color: #1976d2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.cartes-container {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(220px, 1fr));
+	gap: 24px;
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 0 16px;
+}
+
+.carte {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	padding: 20px 16px 24px 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: box-shadow 0.2s;
+}
+
+.carte:hover {
+	box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.carte h2 {
+	font-size: 1.2rem;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+.carte img {
+	width: 100%;
+	max-width: 180px;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 14px;
+	object-fit: cover;
+}
+
+.carte a {
+	margin-top: 8px;
+	color: #1976d2;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+.carte a:hover {
+	color: #0d47a1;
+	text-decoration: underline;
+}
+
+
+.btn-retour {
+    display: inline-flex;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 8px;
+    background: #f3f3f3;
+    border-radius: 24px;
+    padding: 8px 18px;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s, color 0.2s;
+    
+    img {
+        width: 22px; 
+        height: 22px; 
+        vertical-align: middle;
+    }
+}
+
+.btn-retour:hover {
+    background:#e3eaff;
+    color: #0d47a1;
+}
