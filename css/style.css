@@ -1,6 +1,10 @@
-
+:root {
+	--primary-color: #1976d2;
+	--secondary-color: #f3f3f3;
+	--link-hover-color: #0d47a1;
+}
 .main-header {
-    background-color: #1976d2;
+    background-color: var(--primary-color);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -49,16 +53,19 @@
 
 .carte a {
 	margin-top: 8px;
-	color: #1976d2;
+	color: var(--primary-color);
 	text-decoration: none;
 	font-weight: 500;
 	transition: color 0.2s;
 }
 .carte a:hover {
-	color: #0d47a1;
+	color: var(--link-hover-color);
 	text-decoration: underline;
 }
-
+.carte span {
+	color: var(--primary-color);
+	font-weight: 500;
+}
 
 .btn-retour {
     display: inline-flex;
@@ -68,7 +75,7 @@
     background: #f3f3f3;
     border-radius: 24px;
     padding: 8px 18px;
-    color: #1976d2;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1em;
@@ -84,5 +91,5 @@
 
 .btn-retour:hover {
     background:#e3eaff;
-    color: #0d47a1;
+    color:  var(--link-hover-color);
 }
