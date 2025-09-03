@@ -93,3 +93,7 @@
     background:#e3eaff;
     color:  var(--link-hover-color);
 }
+
+footer {
+	margin: 2rem 0;
+}
